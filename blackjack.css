@@ -1,0 +1,42 @@
+/* Styles go here */
+
+body{
+  background-image: url("https://docs.google.com/uc?id=1LmddZessL-HxZvu4hABapw4a-j2r4zSu");
+  background-size: cover;
+}
+h1{
+  color: white;
+}
+
+#intro{
+  width:230px;
+}
+
+p{
+  border-style: none none none solid;
+  background: #fff5d4;
+  width: 130px;
+  height: 20px;
+  border-color: white;
+  text-indent: 5px;
+}
+
+#pass-button, #hit-button, #card1, #card2, #playerscore, #dealercard1, #dealercard2, #dealerhand{
+  display:none;
+}
+
+#dealerinfo{
+  
+  position: absolute;
+  height: auto; 
+  right: 1px;
+  top: 65px;
+  width: 200px;
+
+}
+
+#dealerscore{
+  position: relative;
+  left:300px;
+  display:none;
+}
