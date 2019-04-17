@@ -1,4 +1,3 @@
-
 /* 
   BlackJack Game
   @Rebecca Deng
@@ -28,6 +27,7 @@ let dealercard1 = document.getElementById("dealercard1");
 let dealercard2 = document.getElementById("dealercard2");
 let dealerscore = document.getElementById("dealerscore");
 let dearlerinfo = document.getElementById("dealerinfo");
+let additional = document.getElementById("additional");
 let playerArray = [];
 let dealerArray = [];
 var dealerScore = 0; 
@@ -103,7 +103,7 @@ function details(){
 
 function newGameDisplayDetails(){
   firsttext.innerHTML = "Your Hand ";
-  firsttext.style.width = "130px";
+  firsttext.style.width = "150px";
   card1.style.display = "block";
   card2.style.display = "block";
   pTotalScore.style.display = "block";
@@ -149,7 +149,7 @@ function grabCard(deck){
 newgame.addEventListener('click', function() {
   console.log("Going through newgame");
   deleteDisplayDetails(stuff, playerArray);
-  deleteDisplayDetails(dealerinfo, dealerArray);
+  deleteDisplayDetails(additional, dealerArray);
   playerScore = 0;
   dealerScore = 0;
   deck = createDeck();
@@ -179,7 +179,7 @@ pass.addEventListener('click', function(){
   for (let i = 0; i < 5; i++){
     if (dealerScore <= 16){
       grab = grabCard(deck);
-      displayDetails(dealerinfo, dealerArray, grab);
+      displayDetails(additional, dealerArray, grab);
       dealerScore = keepScore(dealerScore, grab);
     }  
     else {break;}
@@ -205,14 +205,3 @@ pass.addEventListener('click', function(){
     alarm("You Lose! Click 'New Game' to start new game");
   }
 });
-
-
-
-
-
-
-
-  
-
-
-
