@@ -9,19 +9,19 @@ h1{
 }
 
 #intro{
-  width:230px;
+  width:200px;
 }
 
 p{
   border-style: none none none solid;
   background: #fff5d4;
-  width: 130px;
+  width: 150px;
   height: 20px;
   border-color: white;
   text-indent: 5px;
 }
 
-#pass-button, #hit-button, #card1, #card2, #playerscore, #dealercard1, #dealercard2, #dealerhand{
+#pass-button, #hit-button, #card1, #card2, #playerscore, #dealercard1, #dealercard2, #dealerhand, #dealerscore{
   display:none;
 }
 
@@ -32,11 +32,9 @@ p{
   right: 1px;
   top: 65px;
   width: 200px;
-
 }
 
-#dealerscore{
-  position: relative;
-  left:300px;
-  display:none;
+#bleh{
+  position:relative;
+  top:1px;
 }
